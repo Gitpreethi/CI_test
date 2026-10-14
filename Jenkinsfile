@@ -21,7 +21,7 @@ pipeline {
         stage('Backend Setup') {
             steps {
                 dir('backend') {
-                    bat 'python -m pip install -r requirements.txt'
+                    bat 'C:\\Users\\Preethi\\AppData\Local\\Programs\\Python\\Python313\\python.exe -m pip install -r requirements.txt'
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
         stage('Backend Check') {
             steps {
                 dir('backend') {
-                    bat 'python -m py_compile app.py'
+                    bat 'C:\\Users\\Preethi\\AppData\Local\\Programs\\Python\\Python313\\python.exe -m py_compile app.py'
                 }
             }
         }
